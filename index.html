@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="start-field">
+        <img class="start-img" src="pic/pngwing.com.png" alt="law" />
+        <button class="btn start-btn" name=" start-button">СТАРТ</button>
+      </div>
+
+      <div class="game-field">
+        <div class="attempts">
+          Количество попыток:
+          <div class="attempts-number">1</div>
+          /
+          <div class="attempts-max">5</div>
+        </div>
+        <div class="word-field"></div>
+        <div class="description-field"></div>
+
+        <div class="input-word-field">
+          <input type="text" placeholder="Введите букву/слово" value="" />
+          <button class="btn enter-btn">ВВОД</button>
+        </div>
+      </div>
+
+      <div class="modal-field">
+        <div class="modal-box">
+          <div class="loser">Вы проиграли!</div>
+          <div class="winner">
+            <img class="donna-wink" src="pic/donna-suits.gif" alt="Donna" />
+            <p>Поздравляем!</p>
+            <p>Вы выиграли!</p>
+          </div>
+          <button class="btn continue">Ещё раз</button>
+          <button class="btn exit">Выйти</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
