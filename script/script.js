@@ -166,9 +166,9 @@ function checking() {
 
   if (inputField.value.length == 1) {
     letters.forEach((element) => {
-      if (inputField.value === element) {
+      if (inputField.value.toLowerCase() === element) {
         allInvisibleLetters.forEach((item) => {
-          if (inputField.value === item.innerHTML) {
+          if (inputField.value.toLowerCase() === item.innerHTML) {
             item.classList.add("box-letter_visible");
           }
         });
@@ -183,15 +183,15 @@ function checking() {
     document.querySelector(".winner").classList.add("winner_visible");
   }
 
-  if (inputField.value.length == 1 && !letters.includes(inputField.value)) {
+  if (inputField.value.length == 1 && !letters.includes(inputField.value.toLowerCase())) {
     alert("Wrong! Try again.");
     attemptsCounter();
   }
 
   if (inputField.value.length > 1) {
-    if (randomWord.word.toLowerCase() === inputField.value) {
+    if (randomWord.word.toLowerCase() === inputField.value.toLowerCase()) {
       allInvisibleLetters.forEach((item) => {
-        if (inputField.value === randomWord.word.toLowerCase()) {
+        if (inputField.value.toLowerCase() === randomWord.word.toLowerCase()) {
           item.classList.add("box-letter_visible");
           startModal();
           document.querySelector(".winner").classList.add("winner_visible");
