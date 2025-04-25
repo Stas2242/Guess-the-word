@@ -25,6 +25,11 @@ body {
   display: none;
 }
 
+.start-field h1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 .start-img {
   max-height: 50%;
 }
@@ -38,6 +43,7 @@ body {
   border-radius: 50px;
   font-weight: 800;
   font-size: 2em;
+  cursor:pointer;
 }
 
 .game-field {
